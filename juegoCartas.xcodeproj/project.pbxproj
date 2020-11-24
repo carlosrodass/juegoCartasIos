@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FEDE29F256D3C07001C3EC3 /* LostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEDE29E256D3C07001C3EC3 /* LostViewController.swift */; };
+		1FEDE2A1256D4416001C3EC3 /* 18090-a-boy-named-dino.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FEDE2A0256D4416001C3EC3 /* 18090-a-boy-named-dino.json */; };
+		1FEDE2A3256D4777001C3EC3 /* lost.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FEDE2A2256D4777001C3EC3 /* lost.json */; };
+		4F85DA072556C90F0046B9D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F85DA062556C90F0046B9D7 /* AppDelegate.swift */; };
+		4F85DA092556C90F0046B9D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F85DA082556C90F0046B9D7 /* SceneDelegate.swift */; };
+		4F85DA0B2556C90F0046B9D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F85DA0A2556C90F0046B9D7 /* ViewController.swift */; };
+		4F85DA0E2556C90F0046B9D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F85DA0C2556C90F0046B9D7 /* Main.storyboard */; };
+		4F85DA102556C9100046B9D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F85DA0F2556C9100046B9D7 /* Assets.xcassets */; };
+		4F85DA132556C9100046B9D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F85DA112556C9100046B9D7 /* LaunchScreen.storyboard */; };
+		4F85DA1C2556E23E0046B9D7 /* PrimerControlador.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F85DA1B2556E23E0046B9D7 /* PrimerControlador.swift */; };
+		9359AADF0D1D522BA6E4D1FC /* Pods_juegoCartas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 661F270AF9238B331986EA9E /* Pods_juegoCartas.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1FEDE29E256D3C07001C3EC3 /* LostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LostViewController.swift; sourceTree = "<group>"; };
+		1FEDE2A0256D4416001C3EC3 /* 18090-a-boy-named-dino.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "18090-a-boy-named-dino.json"; sourceTree = "<group>"; };
+		1FEDE2A2256D4777001C3EC3 /* lost.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lost.json; sourceTree = "<group>"; };
+		3005893D15366F03AFB1687D /* Pods-juegoCartas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-juegoCartas.debug.xcconfig"; path = "Target Support Files/Pods-juegoCartas/Pods-juegoCartas.debug.xcconfig"; sourceTree = "<group>"; };
+		4F85DA032556C90F0046B9D7 /* juegoCartas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = juegoCartas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F85DA062556C90F0046B9D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4F85DA082556C90F0046B9D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4F85DA0A2556C90F0046B9D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4F85DA0D2556C90F0046B9D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4F85DA0F2556C9100046B9D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F85DA122556C9100046B9D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4F85DA142556C9100046B9D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F85DA1B2556E23E0046B9D7 /* PrimerControlador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimerControlador.swift; sourceTree = "<group>"; };
+		661F270AF9238B331986EA9E /* Pods_juegoCartas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_juegoCartas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD7E9A557F4A600EA3DB8F12 /* Pods-juegoCartas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-juegoCartas.release.xcconfig"; path = "Target Support Files/Pods-juegoCartas/Pods-juegoCartas.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F85DA002556C90F0046B9D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9359AADF0D1D522BA6E4D1FC /* Pods_juegoCartas.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F85D9FA2556C90F0046B9D7 = {
+			isa = PBXGroup;
+			children = (
+				4F85DA052556C90F0046B9D7 /* juegoCartas */,
+				4F85DA042556C90F0046B9D7 /* Products */,
+				BDA1A4C3ED0227A10AA0FB72 /* Pods */,
+				D4D85D1D2C4F8EE13D44690C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4F85DA042556C90F0046B9D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F85DA032556C90F0046B9D7 /* juegoCartas.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F85DA052556C90F0046B9D7 /* juegoCartas */ = {
+			isa = PBXGroup;
+			children = (
+				1FEDE2A2256D4777001C3EC3 /* lost.json */,
+				1FEDE2A0256D4416001C3EC3 /* 18090-a-boy-named-dino.json */,
+				4F85DA062556C90F0046B9D7 /* AppDelegate.swift */,
+				4F85DA082556C90F0046B9D7 /* SceneDelegate.swift */,
+				4F85DA0A2556C90F0046B9D7 /* ViewController.swift */,
+				4F85DA1B2556E23E0046B9D7 /* PrimerControlador.swift */,
+				1FEDE29E256D3C07001C3EC3 /* LostViewController.swift */,
+				4F85DA0C2556C90F0046B9D7 /* Main.storyboard */,
+				4F85DA0F2556C9100046B9D7 /* Assets.xcassets */,
+				4F85DA112556C9100046B9D7 /* LaunchScreen.storyboard */,
+				4F85DA142556C9100046B9D7 /* Info.plist */,
+			);
+			path = juegoCartas;
+			sourceTree = "<group>";
+		};
+		BDA1A4C3ED0227A10AA0FB72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3005893D15366F03AFB1687D /* Pods-juegoCartas.debug.xcconfig */,
+				FD7E9A557F4A600EA3DB8F12 /* Pods-juegoCartas.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D4D85D1D2C4F8EE13D44690C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				661F270AF9238B331986EA9E /* Pods_juegoCartas.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F85DA022556C90F0046B9D7 /* juegoCartas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F85DA172556C9100046B9D7 /* Build configuration list for PBXNativeTarget "juegoCartas" */;
+			buildPhases = (
+				30F8978794EFF94BF3A8D584 /* [CP] Check Pods Manifest.lock */,
+				4F85D9FF2556C90F0046B9D7 /* Sources */,
+				4F85DA002556C90F0046B9D7 /* Frameworks */,
+				4F85DA012556C90F0046B9D7 /* Resources */,
+				C68F59BC65C2422B28646454 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = juegoCartas;
+			productName = juegoCartas;
+			productReference = 4F85DA032556C90F0046B9D7 /* juegoCartas.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F85D9FB2556C90F0046B9D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					4F85DA022556C90F0046B9D7 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = 4F85D9FE2556C90F0046B9D7 /* Build configuration list for PBXProject "juegoCartas" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F85D9FA2556C90F0046B9D7;
+			productRefGroup = 4F85DA042556C90F0046B9D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F85DA022556C90F0046B9D7 /* juegoCartas */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F85DA012556C90F0046B9D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F85DA132556C9100046B9D7 /* LaunchScreen.storyboard in Resources */,
+				4F85DA102556C9100046B9D7 /* Assets.xcassets in Resources */,
+				1FEDE2A3256D4777001C3EC3 /* lost.json in Resources */,
+				4F85DA0E2556C90F0046B9D7 /* Main.storyboard in Resources */,
+				1FEDE2A1256D4416001C3EC3 /* 18090-a-boy-named-dino.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30F8978794EFF94BF3A8D584 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-juegoCartas-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C68F59BC65C2422B28646454 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-juegoCartas/Pods-juegoCartas-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-juegoCartas/Pods-juegoCartas-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-juegoCartas/Pods-juegoCartas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F85D9FF2556C90F0046B9D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F85DA1C2556E23E0046B9D7 /* PrimerControlador.swift in Sources */,
+				4F85DA0B2556C90F0046B9D7 /* ViewController.swift in Sources */,
+				1FEDE29F256D3C07001C3EC3 /* LostViewController.swift in Sources */,
+				4F85DA072556C90F0046B9D7 /* AppDelegate.swift in Sources */,
+				4F85DA092556C90F0046B9D7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4F85DA0C2556C90F0046B9D7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F85DA0D2556C90F0046B9D7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4F85DA112556C9100046B9D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F85DA122556C9100046B9D7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4F85DA152556C9100046B9D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4F85DA162556C9100046B9D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F85DA182556C9100046B9D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3005893D15366F03AFB1687D /* Pods-juegoCartas.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = juegoCartas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rodas.juegoCartas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F85DA192556C9100046B9D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD7E9A557F4A600EA3DB8F12 /* Pods-juegoCartas.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = juegoCartas/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rodas.juegoCartas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F85D9FE2556C90F0046B9D7 /* Build configuration list for PBXProject "juegoCartas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F85DA152556C9100046B9D7 /* Debug */,
+				4F85DA162556C9100046B9D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F85DA172556C9100046B9D7 /* Build configuration list for PBXNativeTarget "juegoCartas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F85DA182556C9100046B9D7 /* Debug */,
+				4F85DA192556C9100046B9D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F85D9FB2556C90F0046B9D7 /* Project object */;
+}

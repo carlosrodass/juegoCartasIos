@@ -1,0 +1,6 @@
+framework module Pods_juegoCartas {
+  umbrella header "Pods-juegoCartas-umbrella.h"
+
+  export *
+  module * { export * }
+}
