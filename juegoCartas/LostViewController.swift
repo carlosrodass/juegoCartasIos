@@ -22,7 +22,7 @@ class LostViewController: UIViewController {
     }
     
     func setUpAnimation(){
-        MyanimationView.animation = Animation.named("lost")
+        MyanimationView.animation = Animation.named("18090-a-boy-named-dino")
         MyanimationView.frame = CGRect(x: 0, y: 30, width: 400, height: 400)
         MyanimationView.backgroundColor = .white
         MyanimationView.contentMode = .scaleAspectFit

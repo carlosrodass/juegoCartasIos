@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -16,10 +16,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="c2T-mS-Vgb">
-                                <rect key="frame" x="45" y="194" width="324" height="152.5"/>
+                                <rect key="frame" x="45" y="244" width="324" height="152.66666666666663"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txB-bf-iHW">
-                                        <rect key="frame" x="0.0" y="0.0" width="137" height="152.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="137" height="152.66666666666666"/>
                                         <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
                                         <state key="normal" title="Carta 1" backgroundImage="er">
                                             <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -30,7 +30,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjE-DO-BFr">
-                                        <rect key="frame" x="187" y="0.0" width="137" height="152.5"/>
+                                        <rect key="frame" x="187" y="0.0" width="137" height="152.66666666666666"/>
                                         <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
                                         <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Carta 2" backgroundImage="er">
@@ -44,26 +44,37 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mgt-uE-gGG">
-                                <rect key="frame" x="148" y="466.5" width="118" height="152.5"/>
+                                <rect key="frame" x="148" y="496.66666666666669" width="118" height="152.66666666666669"/>
                                 <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="40"/>
                                 <state key="normal" title="Total" backgroundImage="er">
                                     <color key="titleColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ef7-EF-Ukf">
+                                <rect key="frame" x="50" y="118" width="314" height="91"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mgt-uE-gGG" secondAttribute="trailing" constant="148" id="3qD-we-iWO"/>
-                            <constraint firstItem="c2T-mS-Vgb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="83N-yP-OD2"/>
+                            <constraint firstItem="c2T-mS-Vgb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="83N-yP-OD2"/>
                             <constraint firstItem="Mgt-uE-gGG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="148" id="ARS-IY-Jc4"/>
                             <constraint firstItem="Mgt-uE-gGG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BNo-Kr-xTn"/>
+                            <constraint firstItem="c2T-mS-Vgb" firstAttribute="top" secondItem="ef7-EF-Ukf" secondAttribute="bottom" constant="35" id="L33-Wr-vgp"/>
+                            <constraint firstItem="ef7-EF-Ukf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="MWE-yH-v0r"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c2T-mS-Vgb" secondAttribute="trailing" constant="45" id="XPW-gY-Ije"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ef7-EF-Ukf" secondAttribute="trailing" constant="50" id="e5P-Ae-d3V"/>
+                            <constraint firstItem="ef7-EF-Ukf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="74" id="kcO-NH-ypw"/>
                             <constraint firstItem="c2T-mS-Vgb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="lCw-on-oMl"/>
-                            <constraint firstItem="Mgt-uE-gGG" firstAttribute="top" secondItem="c2T-mS-Vgb" secondAttribute="bottom" constant="120" id="msk-x3-b7E"/>
+                            <constraint firstItem="Mgt-uE-gGG" firstAttribute="top" secondItem="c2T-mS-Vgb" secondAttribute="bottom" constant="100" id="msk-x3-b7E"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="contador" destination="ef7-EF-Ukf" id="H7N-al-18u"/>
                         <outlet property="negativeTitle" destination="txB-bf-iHW" id="IOs-7M-dmG"/>
                         <outlet property="positiveTItle" destination="PjE-DO-BFr" id="zeL-TU-MAh"/>
                         <outlet property="total" destination="Mgt-uE-gGG" id="RaY-rd-ApN"/>

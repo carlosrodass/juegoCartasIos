@@ -8,19 +8,24 @@ class PrimerControlador: UIViewController {
     @IBOutlet weak var total: UIButton!
     @IBOutlet weak var negativeTitle: UIButton!
     @IBOutlet weak var positiveTItle: UIButton!
+    @IBOutlet weak var contador: UILabel!
+    var contadorNum : Int = 0
     
     
     
     @IBAction func negative(_ sender: Any) {
         //Animacion carta
         animation(carta: false)
+        contadorNum = contadorNum+1
+        
+        //Contador
+        contadorCartas()
         
         //cogiendo el numero del total
         let anteriorStr = total.title(for: .normal)
         let anteriorInt = Int(anteriorStr ?? "0")
         
         //cogiendo el numero de la carta negativa
-        
         let numeroNegativo = positiveNegative(carta: false)
         
         //sumando numero total y numero carta negativa
@@ -28,9 +33,9 @@ class PrimerControlador: UIViewController {
         
         if(tottalyN > 21 || tottalyN < 0){
             LostMessage()
-            
+        //Generando numero aleatorio carta izquierda
         }else{
-            //Generando numero aleatorio carta izquierda
+            
             randomFromCard(carta: false)
         }
     }
@@ -39,6 +44,9 @@ class PrimerControlador: UIViewController {
         
        //Animacion carta
         animation(carta: true)
+        
+       //Contador
+        contadorCartas()
         
         //cogiendo el numero del total y operando
         let anteriorStrP = total.title(for: .normal)
@@ -121,6 +129,9 @@ class PrimerControlador: UIViewController {
         total.setTitle("0", for: .normal)
         positiveTItle.setTitle("0", for: .normal)
         negativeTitle.setTitle("0", for: .normal)
+        contadorNum = 0
+        let contadorStr = String(contadorNum)
+        contador.text = "Tu puntuación es: " + contadorStr
         
         let vc = storyboard?.instantiateViewController(identifier: "lost_vc") as! LostViewController
         present(vc, animated: true)
@@ -149,6 +160,14 @@ class PrimerControlador: UIViewController {
             })
         }
 
+    }
+    
+    
+    func contadorCartas(){
+        contadorNum = contadorNum+1
+              
+        let contadorStr = String(contadorNum)
+        contador.text = "Tu puntuación es: " + contadorStr
     }
     
 }
