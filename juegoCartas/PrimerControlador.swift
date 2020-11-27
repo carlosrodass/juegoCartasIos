@@ -12,6 +12,7 @@ class PrimerControlador: UIViewController {
     var positive = UIButton(frame: CGRect(x: 255, y: 200, width: 150, height: 450))
     var negative = UIButton(frame: CGRect(x: 15, y: 200, width: 150, height: 450))
     var total = UIButton(frame: CGRect(x: 125, y: 400, width: 150, height: 450))
+    let contadorView = UITextView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,71 +20,80 @@ class PrimerControlador: UIViewController {
         let initNumber = "0"
         
         //Boton positivo
-        
         positive.backgroundColor = .green
+        positive.layer.cornerRadius = 10
         positive.setTitle(initNumber, for: .normal)
-        
         positive.addTarget(self, action: #selector(buttonPositive) , for: .touchUpInside)
         positive.translatesAutoresizingMaskIntoConstraints = false
         
-        //self.view.addSubview(positive)
         
         
         //Boton negativo
         negative.backgroundColor = .red
+        negative.layer.cornerRadius = 10
+        //negative.setBackgroundImage(#imageLiteral(resourceName: "er"), for: .normal)
         negative.setTitle(initNumber, for: .normal)
         negative.addTarget(self, action: #selector(buttonNegative) , for: .touchUpInside)
         negative.translatesAutoresizingMaskIntoConstraints = false
-
-        //self.view.addSubview(negative)
+       
         
         
         //Boton total
         total.backgroundColor = .blue
+        total.layer.cornerRadius = 10
         total.setTitle(initNumber, for: .normal)
         total.addTarget(self, action: #selector(buttonTotal) , for: .touchUpInside)
         total.translatesAutoresizingMaskIntoConstraints = false
 
-        //self.view.addSubview(total)
-        
-       
-      
-        stackBotones()
-        
-      
-        
+        nestedStackViews()
         
     }
     
-    func stackBotones(){
+    func nestedStackViews(){
+    
         var buttonArray = [UIButton]()
         
         for _ in 1...3{
             buttonArray.append(negative)
-            buttonArray.append(total)
+            //buttonArray.append(total)
             buttonArray.append(positive)
         }
         
-        let stackView = UIStackView(arrangedSubviews: buttonArray)
-        stackView.axis = .horizontal
-        stackView.distribution = .fillEqually
-        stackView.alignment = .fill
-        stackView.spacing = 5
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(stackView)
+        contadorView.textAlignment = .center
+        contadorView.font = .boldSystemFont(ofSize: 30)
+        contadorView.translatesAutoresizingMaskIntoConstraints = false
+        
+        let subStackView = UIStackView(arrangedSubviews: buttonArray)
+        subStackView.axis = .horizontal
+        subStackView.distribution = .fillEqually
+        subStackView.alignment = .fill
+        subStackView.spacing = 5
+        subStackView.translatesAutoresizingMaskIntoConstraints = false
+        
+        
+        
+        let stackViewVertical = UIStackView(arrangedSubviews: [contadorView,subStackView, total])
+        stackViewVertical.axis = .vertical
+        stackViewVertical.distribution = .fillEqually
+        stackViewVertical.alignment = .fill
+        stackViewVertical.spacing = 5
+        stackViewVertical.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(stackViewVertical)
+        
+        
         
         var const = [NSLayoutConstraint]()
             
-            //Positivo
-        const.append(stackView.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor, constant: 0))
-        const.append(stackView.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor, constant: 0))
+        //Stackview vertical
+        const.append(stackViewVertical.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor, constant: 0))
+        const.append(stackViewVertical.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor, constant: 0))
+       
         
-        const.append(stackView.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor, constant: 20))
-        const.append(stackView.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor, constant: -200))
-        
-        
+        const.append(stackViewVertical.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor, multiplier: 0.9))
+        const.append(stackViewVertical.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.6))
 
         NSLayoutConstraint.activate(const)
+
         
     }
     
@@ -93,7 +103,8 @@ class PrimerControlador: UIViewController {
         animation(carta: true)
         
        //Contador
-        //contadorCartas()
+        let count = contadorCartas()
+        contadorView.text =  count
         
         //cogiendo el numero del total y operando
         let anteriorStrP = total.title(for: .normal)
@@ -120,10 +131,10 @@ class PrimerControlador: UIViewController {
     @objc func buttonNegative(sender: UIButton!) {
         //Animacion carta
         animation(carta: false)
-        contadorNum = contadorNum+1
         
         //Contador
-       // contadorCartas()
+        let count = contadorCartas()
+        contadorView.text = count
         
         //cogiendo el numero del total
         let anteriorStr = total.title(for: .normal)
@@ -194,8 +205,8 @@ class PrimerControlador: UIViewController {
         positive.setTitle("0", for: .normal)
         negative.setTitle("0", for: .normal)
         contadorNum = 0
-        //let contadorStr = String(contadorNum)
-       // contador.text = "Tu puntuación es: " + contadorStr
+        let contadorStr = String(contadorNum)
+        contadorView.text = "Tu puntuación es: " + contadorStr
         
         let vc = storyboard?.instantiateViewController(identifier: "lost_vc") as! LostViewController
         present(vc, animated: true)
@@ -226,12 +237,14 @@ class PrimerControlador: UIViewController {
 
     }
     
-    /*
-    func contadorCartas(){
+    
+    func contadorCartas()->String{
         contadorNum = contadorNum+1
               
         let contadorStr = String(contadorNum)
-        contador.text = "Tu puntuación es: " + contadorStr
+        let text = "Tu puntuación es de :" + contadorStr
+        
+        return text
     }
-    */
+    
 }
