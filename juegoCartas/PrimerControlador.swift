@@ -3,7 +3,51 @@
 import UIKit
 
 class PrimerControlador: UIViewController {
-
+    
+    /*
+     
+     **HERRAMIENTAS Y TECNICAS UTILIZADAS**
+    
+    --SE HA UTILIZADO EN ESTE PROYECTO HERRAMIENTAS: GIT / GITHUB - LIBRERIA(LOTTIE)
+    
+    --SE HA UTILIZADO NAVEGACION ENTRE PANTALLAS / SEGUE MEDIANTE CODIGO :
+        // let vc = storyboard?.instantiateViewController(identifier: "lost_vc") as! LostViewController
+        // present(vc, animated: true)
+    
+    --SE HA UTILIZADO CREACION DE BOTONES, STACKVIEWS Y VISTAS POR CÓDIGO
+    
+    --SE HAN AÑADIDO CONSTRAINTS POR CÓDIGO EN LUGAR DE STORYBOARD
+     
+     ************************************************************************************************************
+     
+     **COMPARACIÓN DE DISTINTAS HERRAMIENTAS Y TÉCNICAS**
+     
+     -- EN CUANTO A DIFERENTES HERRAMIENTAS EN PRIMER LUGAR SE PUEDE UTILIZAR GITLAB EN LUGAR DE GITHUB.
+        AMBAS HERRAMIENTAS SON UTILES E IGUALMENTE APOYADAS POR LA COMUNIDAD A LA HORA DE DESARROLLAR
+        AUNQUE EN GRAN MEDIDA ES MÁS UTILIZADO GITHUB
+     
+     --EN CUANTO A LIBRERIAS SE HA UTILIZADO LOTTIS PARA LA ANIMACION DE LA PANTALLA PERDER, PERO SE PODRÍA HABER UTILIZADO
+        ALGUN GIF O VIDEO EN SU LUGAR. SE DECIDIO UTILIZAR LOTTIE POR SU OPTIMIZACIÓN, PUESTO QUE MEDIANTE UN ARCHIVO JSON, LA INFORMACION VIAJA MÁS RAPIDO Y EFECTIVA
+     
+     --EN CUANTO A LA CREACION DE ELEMENTOS Y CONSTRAINST POR CÓDIGO EN LUGAR DE EN STORYBOARD. POR CÓDIGO LA MANEJABILIDAD DE
+        LOS ELEMENTOS ES MAYOR, POSEES UN MAYOR CONTROL DE LO QUE PASA EN LA VIEW. POR OTRA PARTE DESARROLLAR LA ESTRUCTURA
+            POR CÓDIGO HACE QUE ESTE SEA ESCALABLE A LA LARGA.
+     
+     ************************************************************************************************************
+     
+     **JUSTIFICACION DE HERRAMIENTAS Y TÉCNICAS UTILIZADAS**
+     
+     --SE UTILIZÓ GITHUB EN LUGAR DE OTRO CONTROLADOR DE VERSIONES PUESTO QUE ES EL MÁS CONOCIDO POR MI. AÑADIENDO QUE
+      XCODE TIENE UN OPCION RÁPIDA PARA CREAR REPOSITORIOS LOCALES Y PODER HACER ADD/ COMMIT / PUSH FACILMENTE
+     
+     --EN CUANTO A LAS LIBRERIAS UTILIZADAS, SE UTILIZO UNICAMENTE LOTTIE PUESTO QUE NO ERA NECESARIO IMPORTAR ALGUNA MAS.
+     
+     --FINALMENTE LA CREACIÓN DE TODA LA ESTRUCTURA POR CÓDIGO FUE UTILIZADA EN LUGAR DE LOS VISUAL PUESTO QUE PERMITE UNA MAYOR ESCALABILIDAD Y ENTENDIMIENTO DEL PROYECTO A LARGO PLAZO
+     
+     */
+    
+    
+    
 
  
     @IBOutlet weak var contador: UILabel!
@@ -55,7 +99,6 @@ class PrimerControlador: UIViewController {
         
         for _ in 1...3{
             buttonArray.append(negative)
-            //buttonArray.append(total)
             buttonArray.append(positive)
         }
         
@@ -67,7 +110,7 @@ class PrimerControlador: UIViewController {
         subStackView.axis = .horizontal
         subStackView.distribution = .fillEqually
         subStackView.alignment = .fill
-        subStackView.spacing = 5
+        subStackView.spacing = 10
         subStackView.translatesAutoresizingMaskIntoConstraints = false
         
         
@@ -76,7 +119,7 @@ class PrimerControlador: UIViewController {
         stackViewVertical.axis = .vertical
         stackViewVertical.distribution = .fillEqually
         stackViewVertical.alignment = .fill
-        stackViewVertical.spacing = 5
+        stackViewVertical.spacing = 10
         stackViewVertical.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(stackViewVertical)
         
@@ -91,6 +134,11 @@ class PrimerControlador: UIViewController {
         
         const.append(stackViewVertical.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor, multiplier: 0.9))
         const.append(stackViewVertical.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.6))
+        
+        
+        //Boton total
+        const.append(total.leftAnchor.constraint(equalTo: stackViewVertical.leftAnchor,constant: 80))
+        const.append(total.rightAnchor.constraint(equalTo: stackViewVertical.rightAnchor,constant: -80))
 
         NSLayoutConstraint.activate(const)
 
